@@ -29,10 +29,10 @@ public class AcercaDe extends JDialog {
     private void crearGUI() {
         
         setTitle("Acerca De...");
-        jlImg = new JLabel();
-        jlImg.setIcon(new ImageIcon("angri.png"));
-        jlImg.setBounds(150, 20, 70, 70); 
-        jlImg.setToolTipText("Manuel Antonio Vidales Duran");
+        ImageIcon ii = new ImageIcon(getClass().getResource("../Imagenes/angri.png"));  
+        jlImg = new JLabel(ii);
+        jlImg.setBounds(160, 20, 70, 70); 
+        jlImg.setToolTipText("Este es mis mensaje ");
         add(jlImg);
         
                   

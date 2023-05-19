@@ -39,12 +39,17 @@ public class Login extends JFrame {
     
     public void crearGUI(){
         
-        
+        ImageIcon ii = new ImageIcon(getClass().getResource("../Imagenes/login.png"));  
+        jlImg = new JLabel(ii);
+        jlImg.setBounds(160, 100, 70, 70); 
+        jlImg.setToolTipText("Este es mis mensaje ");
+        add(jlImg);
+        /*
         jlImg = new JLabel();
-        jlImg.setIcon(new ImageIcon("Login.png"));
+        jlImg.setIcon(new ImageIcon("/Imagenes/login.png"));
         jlImg.setBounds(160, 100, 70, 70); 
         add(jlImg);
-        
+        */
         
         
         jlTitulo = new JLabel("<html>Login<br></center>");
