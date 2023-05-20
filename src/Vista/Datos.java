@@ -19,10 +19,20 @@ import javax.swing.SpinnerDateModel;
 
 public class Datos extends JFrame{
     
-    JComboBox<String> jcIdent, jcGenero,jcCombo, jJornada;
+    public JComboBox<String> jcIdent;
+    public JComboBox<String> jcGenero;
+    public JComboBox<String> jcCombo;
+    public JComboBox<String> jJornada;
     JLabel  jlTitu,jlTitu1, jlNumIde, jlApe, jlNom, jlFechaN, jlCiuRe,jlDire, jlCorreo, jlContraseña, jlFecha, jlNomp, jlTitulo;
-    JTextField jtNumIde, jtApe, jtNom, jtCiuRe,jtDire, jtCorreo, jtContraseña, jtNomplan;
-    JTextArea jTObser;
+    public JTextField jtNumIde;
+    public JTextField jtApe;
+    public JTextField jtNom;
+    public JTextField jtCiuRe;
+    public JTextField jtDire;
+    public JTextField jtCorreo;
+    public JTextField jtContraseña;
+    public JTextField jtNomplan;
+    public JTextArea jTObser;
     
     public JSpinner jsFechaNac,jsNumeros, jsTexto, jsFecha;
     public JButton jbGuardar, jbVolver, jbColsultar, jbLimpiar;
@@ -254,9 +264,6 @@ public class Datos extends JFrame{
         
     }
     
-    public static void main(String[] args) {
-          Datos ob =  new Datos();
-          
-      }
+    
     
 }

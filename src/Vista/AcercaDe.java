@@ -6,7 +6,7 @@ import javax.swing.JButton;
 import javax.swing.JDialog;
 import javax.swing.JLabel;
 import javax.swing.SwingConstants;
-
+import Controlador.AcercaDe_Controlador;
 
 public class AcercaDe extends JDialog {
     
@@ -17,10 +17,9 @@ public class AcercaDe extends JDialog {
         
         
         setSize(400, 400);
-        
+        setLocationRelativeTo(null);
         setLayout(null);
         crearGUI();
-        
         
         setVisible(true);
         
@@ -67,5 +66,7 @@ public class AcercaDe extends JDialog {
     
     public static void main(String[] args) {
         AcercaDe obj = new AcercaDe();
+        AcercaDe_Controlador obj2 = new AcercaDe_Controlador(obj);
     }
+    
 }

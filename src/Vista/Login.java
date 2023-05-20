@@ -19,9 +19,10 @@ import javax.swing.border.Border;
 
 public class Login extends JFrame {
   JLabel jlTitulo,jlImg;
-  JTextField jtIdentificacion;
-  JPasswordField jpContraseña;
-  JButton jbEntrar, jbRegistrase;
+  public JTextField jtIdentificacion;
+  public JPasswordField jpContraseña;
+  public JButton jbEntrar;
+public JButton jbRegistrase;
   
     public Login(){
          super("Ingresar");
